@@ -1,0 +1,55 @@
+Introdução
+
+Sistemas de controle de versão como o Git são essenciais para as melhores práticas de desenvolvimento de softwares modernos. O controle de versão permite que você acompanhe seu software a nível de código-fonte. É possível rastrear as alterações, retornar a etapas anteriores, e os ramos para criar versões alternativas de arquivos e diretórios.
+
+Muitos arquivos de projetos são mantidos em um repositório Git, e plataformas como o GitHub, o GitLab, e o Bitbucket ajudam a facilitar o compartilhamento e colaboração de projetos de desenvolvimento de software.
+
+Neste guia, iremos demonstrar como instalar e configurar o Git em um servidor Ubuntu 20.04. Trataremos a instalação do software de duas maneiras diferentes: através do gerenciador de pacotes integrado e através da origem. Cada uma destas abordagens tem seus próprios benefícios em diferentes situações. Você deve escolher entre elas de acordo com sua necessidade específica.
+Pré-requisitos
+
+Será necessário ter um servidor Ubuntu 20.04 com uma conta de superusuário não root.
+
+Para configurar isto, siga nosso guia Configuração do servidor inicial para o Ubuntu 20.04
+
+Com seu servidor e usuário configurados, tudo está pronto para começar.
+Como instalar o Git com os pacotes padrão
+
+A opção de instalar com pacotes padrão é melhor se você quiser que tudo esteja funcionando rapidamente com o Git, caso prefira uma versão estável amplamente utilizada, ou se você não estiver procurando as mais recentes funcionalidades disponíveis. Se estiver procurando pela versão mais recente, vá para a seção de instalação a partir da origem.
+
+O Git provavelmente já está instalado em seu servidor Ubuntu 20.04. Você pode confirmar se este é o caso em seu servidor com o seguinte comando:
+
+    git --version
+
+ 
+
+Se receber um resultado semelhante ao seguinte, o Git já está instalado.
+
+Output
+git version 2.25.1
+
+Se este for o caso para você, configure o Git ou confira a próxima seção sobre como instalar a partir da origem se precisar de uma versão mais atualizada.
+
+No entanto, caso não tenha obtido um resultado de um número de versão do Git, você pode instalá-lo com o gerenciador de pacotes padrão APT do Ubuntu.
+
+Primeiramente, utilize as ferramentas de gerenciamento de pacotes apt para atualizar seu índice de pacotes local.
+
+    sudo apt update
+
+ 
+
+Com a atualização finalizada, instale o Git:
+
+    sudo apt install git
+
+ 
+
+Você pode confirmar se instalou o Git corretamente executando o seguinte comando e verificando se recebe um resultado relevante.
+
+    git --version
+
+ 
+
+Output
+git version 2.25.1
+
+Com o Git instalado com sucesso, agora é possível seguir em frente para a seção Como configurar o Git deste tutorial para completar sua configuração.
